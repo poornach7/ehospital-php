@@ -21,6 +21,28 @@ SET time_zone = "+00:00";
 
 
 --
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `updationDate` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+INSERT INTO `admin` (`id`, `username`, `password`, `updationDate`) VALUES 
+  (1, 'admin', 'admin', '28-12-2016 11:42:05 AM');
+
+--
+-- Dumping data for table `admin`
+
+
+--
 -- Table structure for table `administer`
 --
 
