@@ -84,7 +84,7 @@ $num_rows = mysqli_num_rows($result);
 										
 											<p class="cl-effect-1">
 												<a href="manage-doctors.php">
-												<?php $result1 = mysqli_query($con,"SELECT * FROM doctors ");
+												<?php $result1 = mysqli_query($con,"SELECT * FROM doctor ");
 $num_rows1 = mysqli_num_rows($result1);
 {
 ?>
@@ -124,7 +124,7 @@ $num_rows2 = mysqli_num_rows($sql);
 											
 											<p class="links cl-effect-1">
 												<a href="manage-patient.php">
-<?php $result = mysqli_query($con,"SELECT * FROM tblpatient ");
+<?php $result = mysqli_query($con,"SELECT * FROM patient ");
 $num_rows = mysqli_num_rows($result);
 {
 ?>
@@ -150,7 +150,7 @@ Total Patients :<?php echo htmlentities($num_rows);
 												<a href="book-appointment.php">
 													<a href="unread-queries.php">
 												<?php 
-$sql= mysqli_query($con,"SELECT * FROM tblcontactus where  IsRead is null");
+$sql= mysqli_query($con,"SELECT * FROM contactus where  IsRead is null");
 $num_rows22 = mysqli_num_rows($sql);
 ?>
 											Total New Queries :<?php echo htmlentities($num_rows22);   ?>	
